@@ -11,6 +11,39 @@ Document
 Use a better box model (opinionated).
 */
 
+/* Mengatur margin untuk tombol ekspor DataTables */
+.dt-buttons {
+  margin-bottom: 15px;
+}
+
+/* Bootstrap Styling untuk tombol ekspor */
+.btn-datatable {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+/* Hover effect pada tombol */
+.btn-datatable:hover {
+  background-color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+/* Menggunakan selektor yang lebih spesifik untuk kelas */
+.dt-button.btn-datatable {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+/* Hover effect pada tombol dengan selektor spesifik */
+.dt-button.btn-datatable:hover {
+  background-color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
 *,
 *::before,
 *::after {

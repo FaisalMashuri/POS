@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="{{ asset('/AdminLTE-2/dist/css/skins/_all-skins.min.css') }}">
     <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset('/AdminLTE-2/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,6 +35,12 @@
     <!-- Google Font -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<style>
+    span.select2.select2-container.select2-container--classic{
+        width: 100% !important;
+    }
+</style>
 
     @stack('css')
 </head>
@@ -81,10 +90,13 @@
     <script src="{{ asset('AdminLTE-2/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('AdminLTE-2/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
     <!-- AdminLTE App -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ asset('AdminLTE-2/dist/js/adminlte.min.js') }}"></script>
     <!-- Validator -->
     <script src="{{ asset('js/validator.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+  
     <script>
         function preview(selector, temporaryFile, width = 200)  {
             $(selector).empty();

@@ -10,11 +10,12 @@
 </head>
 <body>
     <h3 class="text-center">Laporan Pendapatan</h3>
-    <h4 class="text-center">
+    <!-- <h4 class="text-center">
         Tanggal {{ tanggal_indonesia($awal, false) }}
         s/d
         Tanggal {{ tanggal_indonesia($akhir, false) }}
     </h4>
+
 
     <table class="table table-striped">
         <thead>
@@ -36,6 +37,7 @@
                 </tr>
             @endforeach
         </tbody>
-    </table>
+    </table> -->
+
 </body>
 </html>
